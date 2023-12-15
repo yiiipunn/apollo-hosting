@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth md:scroll-auto duration-300">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/output.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Satriwit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+</head>
+
+<!--Nav bar Start-->
+
+<body class="font-mitr">
+
+    <div id="overlay" class="fixed top-0 left-0 w-full h-full backdrop-blur bg-black  opacity-70 hidden"></div>
+    <div id="popup"
+        class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded shadow-md text-center hidden max-w-2xl md:w-70">
+        <img src="../images/poster.PNG" alt="Ad Image" class="mx-auto max-w-full mb-4 rounded-lg">
+        <p class="mb-4">Welcome To Satriwit Vichakarn'66 !</p>
+        <button onclick="closePopup()" class="bg-red-900 text-white px-4 py-2 rounded">ปิดหน้าต่าง</button>
+
+    </div>
+
+    <script>
+        // Function to show the pop-up
+        function openPopup() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        // Trigger the pop-up when the page loads (you might want to use an event like a button click instead)
+        window.onload = function () {
+            openPopup();
+        };
+    </script>
+    <div class="z-10">
+        <nav class="fixed z-10 flex flex-wrap w-full justify-center py-[1rem] h-14  md:bg-transparent [2rem] md:h-20 duration-300 ease-in-out"
+            id="home">
+
+            <div class="container justify-between flex items-center">
+
+                <img src="../images/logo/aplogo.png" alt="SW Vichakarn logo" class="h-0">
+
+                <div class="hidden justify-between items-center w-full md:flex md:w-auto">
+                    <div class="flex text-black flex-col md:flex-row md:space-x-10 md:font-medium md:text-xl">
+                        <a href="#home" class="hover:text-yellow-200">
+                            <div>หน้าหลัก</div>
+                        </a>
+                        <a href="#info" class="hover:text-yellow-200">
+                            <div>รายละเอียด</div>
+                        </a>
+                        <a href="#schedule" class="hover:text-yellow-200">
+                            <div>กำหนดการ</div>
+                        </a>
+                        <a href="#faq" class="hover:text-yellow-200">
+                            <div>คำถามที่พบบ่อย</div>
+                        </a>
+                        <!--a href="#dev" class="hover:text-sky-700"><div>ทีมผู้พัฒนา</div></a-->
+                        <a href="#contact" class="hover:text-yellow-200">
+                            <div>ติดต่อเรา</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div onclick="myFunction()"
+                    class=" text-center p-auto p-1 flex flex-col bg-slate-900 bg-opacity-60 space-y-2  rounded shadow md:hidden hover:scale-105 duration-300 ease-in-out">
+                    <span class="block w-8 h-1 bg-white"></span>
+                    <span class="block w-8 h-1 bg-white"></span>
+                    <span class="block w-5 h-1 bg-white"></span>
+                </div>
+            </div>
+
+            <div id="MenuMol" class="hidden flex md:hidden top-14 z-10 fixed bg-slate-900 bg-opacity-60 w-full pb-8">
+                <div class="flex flex-col pt-4 gap-4 text-white ml-8 text-center">
+                    <a href="#about" class="hover:text-yellow-200 ">
+                        <div>หน้าหลัก</div>
+                    </a>
+                    <a href="#info" class="hover:text-yellow-200">
+                        <div>รายละเอียด</div>
+                    </a>
+                    <a href="#activity" class="hover:text-yellow-200">
+                        <div>กำหนดการ</div>
+                    </a>
+                    <a href="#faq" class="hover:text-yellow-200">
+                        <div>คำถามที่พบบ่อย</div>
+                    </a>
+                    <!--a href="#cert" class="hover:text-sky-700"><div>ทีมผู้พัฒนา</div></a-->
+                    <a href="#contact" class="hover:text-yellow-200">
+                        <div>ติดต่อเรา</div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--Nav bar End-->
+        <div class="Home bg-cover bg-no-repeat w-full h-full">
+            <img src="../images/cover.png" class="w-full">
+        </div>
+
+        <div class="container pt-12 pb-12 px-10">
+            <div class="About flex justify-center text-center flex-col gap-y-4 w-100 mx-auto " id="info">
+                <h3 class="font-bold text-5xl text-center text-[#6A1D2F]">
+                    About
+                </h3>
+                <p class="text-[#42354C] text-lg text-center">
+                    "อพอลโลคือเทพแห่งสารพัดสิ่ง แสงสว่าง ดวงอาทิตย์
+                    ซึ่งในวันวิชาการนั้นจะมีการจัดให้นักเรียนโรงเรียนสตรีวิทยาได้แสดงศักยภาพและความสามารถที่หลากหลาย
+                    เปรียบเสมือนกับความสามารถของเทพอพอลโลที่เก่งทางด้านดนตรี วิชาการ กีฬา ศิลปะ
+                    และที่ขาดไม่ได้คือทักษะด้านสติปัญญา
+                    ซึ่งสอดคล้องกับอัตลักษณ์ของโรงเรียนสตรีวิทยา นั่นคือ เรียนเด่น เล่นดี มีวินัย ใฝ่พัฒนา
+                    เทพอพอลโลมีชื่อเสียงมากมาย รูปงาม มีความสง่าในตนเอง เเละได้รับการยอมรับ
+                    เปรียบเสมือนนักเรียนโรงเรียนสตรีวิทยาที่ไม่หยุดพัฒนาตนเอง
+                    และขึ้นชื่อว่าเป็นโรงเรียนสตรีอันดับหนึ่งนั่นเอง”
+                </p>
+            </div>
+
+            <div class="flex gap-y-8 md:gap-y-0 justify-between text-center flex-col md:flex-row w-3/4 mx-auto mt-12">
+                <div class="flex flex-col justify-center items-center gap-y-2 text-gray-600">
+                    <a href="activity.html">
+                        <div class="flex flex-col justify-center items-center">
+                            <button class=" btn w-40 h-40 bg-[#DDA34F] rounded-full ">
+                                <img src="../images/hat.png" class="w-4/6 h-4/6 mx-auto"></button>
+                            <div>
+                                <h1 class="text-2xl">ตารางกิจกรรม</h1>
+                                <p class="text-lg text-[#f31b1b93]">ตารางกิจกรรมและเวทีภายในงาน</p>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-y-2 text-gray-600">
+                <div class="flex flex-col justify-center items-center">
+                    <a
+                        href="https://script.google.com/macros/s/AKfycbzxxtzpZ85W4jw0GSIhk2Ccjp8X9FTLexLzWPCw7TjICECMeIksTOjDLzp5OhrW1Qi4/exec">
+                        <button class="btn w-40 h-40 bg-[#DDA34F] rounded-full">
+                            <img src="../images/scroll.png" class="w-4/6 h-4/6 mx-auto">
+                        </button>
+                    </a>
+                </div>
+                <div>
+                    <h1 class="text-2xl">ลงทะเบียน</h1>
+                    <p class="text-lg text-[#f31b1b93]">ลงทะเบียนเข้าร่วมงาน</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-y-2 text-gray-600">
+                <a href="map.html">
+                    <div class="flex flex-col justify-center items-center">
+                        <button class="btn w-40 h-40 bg-[#DDA34F] rounded-full btn ">
+                            <img src="../images/pegasus.png" class="w-4/6 h-4/6 mx-auto"></button>
+                    </div>
+                </a>
+                <div>
+                    <h1 class="text-2xl">แผนผังงาน</h1>
+                    <p class="text-lg text-[#f31b1b93]">แผนผังงานและการเดินทาง</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    </div>
+
+    <body class="bg-gray-100">
+        <div class="Faq flex justify-center text-center flex-col gap-y-4 w-100  bg-red-900 py-10" id="faq">
+            <div class="container mx-auto p-8 items-center ">
+                <div class="flex justify-center items-center gap-x-4 pt-5">
+                    <div class="hidden md:block h-1 w-52 bg-gradient-to-l from-white to-[#00000000] rounded-l-full">
+                    </div>
+                    <h1 class="font-bold text-5xl text-yellow-200 mb-8">FAQ</h1>
+                    <div class="hidden md:block h-1 w-52 bg-gradient-to-r from-white to-[#00000000] rounded-l-full">
+                    </div>
+                </div>
+                <p class="text-white  underline underline-offset-8 mb-4">คำถามที่พบบ่อย</p>
+
+                <div class="flex flex-col gap-4">
+                    <!-- Question 1 -->
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-lg font-semibold">คนภายนอกเข้าร่วมได้ไหม?</h2>
+                            <button id="rotateButton" class="text-blue-500 focus:outline-none"><img
+                                    src="../images/dropdown.png"
+                                    class="w-5 h-5 transition-transform transform origin-center" /></button>
+                        </div>
+                        <div class="hidden mt-4">
+                            <p class="bg-yellow-100 text-left text-red-900">
+                                คนภายนอกสามารถเข้าร่วมได้ทั้งการลงทะเบียนก่อนวันงาน และ walk-in</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-lg font-semibold">มีกิจกรรมอะไรน่าสนใจบ้าง?</h2>
+                            <button id="rotateButton" class="text-blue-500 focus:outline-none"><img
+                                    src="../images/dropdown.png"
+                                    class="w-5 h-5 transition-transform transform origin-center" /></button>
+                        </div>
+                        <div class="hidden mt-4">
+                            <p class="bg-yellow-100 text-left text-red-900">สตรีวิทยาวิชาการ'66
+                                มีทั้งกิจกรรมที่น่าสนใจภายในงานมากมาย ไม่ว่าจะเป็นการแข่งขันกีฬาต่าง ๆ
+                                กิจกรรมแนะนำสายการเรียน กิจกรรมชมรม กิจกรรมห้องเรียนเยอะแยะมาก
+                                และยังมีการแสดงคอนเสิร์ตจากศิลปินมากหน้าหลายตาอีกด้วย</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-lg font-semibold">มีลานจอดรถใกล้เคียงไหม?</h2>
+                            <button id="rotateButton" class="text-blue-500 focus:outline-none"><img
+                                    src="../images/dropdown.png"
+                                    class="w-5 h-5 transition-transform transform origin-center" /></button>
+                        </div>
+                        <div class="hidden mt-4">
+                            <p class="bg-yellow-100 text-left text-red-900">สามารถจอดรถบริเวณวัดบวรนิเวศวิหาร และ
+                                ศาลาว่าการกรุงเทพมหานคร</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Add more questions as needed -->
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <script>
+            // JavaScript to toggle the visibility of the answer
+            document.addEventListener('DOMContentLoaded', function () {
+                const buttons = document.querySelectorAll('.bg-white button');
+
+                buttons.forEach(button => {
+                    button.addEventListener('click', function () {
+                        const answer = this.parentNode.nextElementSibling;
+                        answer.classList.toggle('hidden');
+                    });
+                });
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const rotateButton = document.getElementById('rotateButton');
+                const answer = document.getElementById('answer');
+
+                rotateButton.addEventListener('click', function () {
+                    rotateButton.querySelector('img').classList.toggle('rotate-180');
+                    answer.classList.toggle('hidden');
+                });
+            });
+        </script>
+
+
+
+
+        </div>
+        <div class="Contact flex justify-center text-center flex-col gap-y-4 w-100%  bg-red-900 py-10" id="contact">
+            <div class="container mx-auto p-8 items-center ">
+                <div class="flex justify-center items-center gap-x-4 pt-5">
+                    <div class="hidden md:block h-1 w-52 bg-gradient-to-l from-white to-[#00000000] rounded-l-full">
+                    </div>
+                    <h1 class="font-bold text-5xl text-yellow-200 mb-8">Contact us</h1>
+                    <div class="hidden md:block h-1 w-52 bg-gradient-to-r from-white to-[#00000000] rounded-l-full">
+                    </div>
+                </div>
+                <p class="text-white  underline underline-offset-8 mb-4">ติดต่อสอบถาม</p>
+                <div class=" flex w-full justify-center ">
+                    <div
+                        class="  flex flex-box-border  md:h-100 w-[80%] px-5 py-7 border-4 md:box-content rounded-lg bg-white ">
+                        <div class="container grid-cols-1 ">
+                            <img src="" />
+                            <p class="text-gray-700 py-2 px-4 rounded-lg font-bold">
+                                IG : <a href="https://www.instagram.com/swvichakarn66?igshid=OGQ5ZDc2ODk2ZA=="
+                                    target="_blank" rel="dofollow"
+                                    class="text-red-800 hover\:text-indigo-200">SWVICHAKARN66</a>
+                            </p>
+                            <p class="text-gray-700 font-bold">ที่อยู่โรงเรียน</p>
+                            <p class="text-gray-700">โรงเรียนสตรีวิทยา 82 ถนนดินสอ แขวงวัดบวรนิเวศ <br> เขตพระนคร
+                                กรุงเทพฯ 10200</p>
+
+                            <p class="text-gray-700 py-2 px-4 rounded-lg">
+                                โทรศัพท์</p>
+                            <p class="text-gray-700">0-2281-6505, 0-2282-1626</p>
+                            </p>
+                            <p class=" text-gray-700 py-2 px-4 rounded-lg">
+                                อีเมล</p>
+                            <p class="text-gray-700">satriwit@satriwit.ac.th</p>
+                            </p>
+                            <p class="text-gray-700 py-2 px-4 rounded-ly">
+                                เวลาราชการ</p>
+                            <p class="text-gray-700">จ.-ศ. 9.00น. ถึง17.00น.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer-copy">
+                <div class="flex flex-box-border justify-center items-center>
+              <div class=" container-fluid ">
+                <div class=" flex w-full ">
+                  <p class =" bg-black w-full py-6 text-white text-center">2023 © Satriwit Vichakarn's Website Designed
+                    by <a href="https://instagram.com/roboticandai.club?igshid=MzRlODBiNWFlZA==" target="_blank"
+                        rel="dofollow" class="text-blue-500">Robotic &amp; Ai Club</a></p>
+                </div>
+        </div>
+        </div>
+        </footer>
+
+
+        </div>
+        </div>
+    </body>
+
+</html>
